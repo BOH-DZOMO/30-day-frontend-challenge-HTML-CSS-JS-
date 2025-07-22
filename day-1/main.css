@@ -1,3 +1,5 @@
+/* had to make the date picker transparent because it was sticking 
+out but AI suggested using the label as the entire picker button so you can press anywhere for it to work */
 *{
     margin: 0;
     padding: 0;
@@ -70,6 +72,13 @@ main{
 
 }
 
+#result{
+    font-size: 20px;
+}
+
+#result span{
+    color: #ffff76;
+}
  
 
 
