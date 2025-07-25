@@ -63,5 +63,19 @@ main h1 img{
 .input-box{
     position: relative;
     width: 100%;
-    
+    max-width: 500px;
+    background: white;
+    min-height: 150px;
+    color: #333;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px 0;
+    outline: none;
+}
+
+.input-box img{
+    width: 25px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
 }
