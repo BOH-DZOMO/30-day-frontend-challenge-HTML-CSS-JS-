@@ -8,7 +8,6 @@ function getDaysInMonth(year, month)
 return new Date(year, month, 0).getDate();
 }
 function calculateAge() {
-console.log(userInput.value);
 let birthDate = new Date(userInput.value);
 
 let d1 = birthDate.getDate();

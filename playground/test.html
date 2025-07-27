@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <button class="btn" id="create" >Create Notes</button>
+            <div class="notes-container">
+                <!-- <p contenteditable="true" class="input-box">
+                    <img src="images/delete.png" alt="">
+                </p>              -->
+            </div>
+    </main>
+</body>
+</html>
+
+<script>
+     let inputBox = document.createElement("p");
+    inputBox.innerHTML = "hello <strong>world</strong> <span>cool</span>";
+    console.log(inputBox.children);
+    
+    console.log("---");
+
+    let strongTag = inputBox.childNodes[1];
+    strongTag.style.color = "blue"
+    
+    console.log(inputBox.childNodes[1]);
+    
+    notesContainer.appendChild(inputBox);
+</script>
