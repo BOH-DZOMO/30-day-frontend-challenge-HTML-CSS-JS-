@@ -44,12 +44,44 @@ notesContainer.addEventListener("click", function(e){
 //         event.preventDefault();
 //     }
 // })
+
+// document.addEventListener("keydown", event => {
+//     if (event.key === "Enter" && event.target.hasAttribute("contenteditable")) {
+//         event.preventDefault();
+        
+//         // Simple modern way
+//         document.execCommand("insertHTML", false, "<br>");
+//     }
+// });
+
 document.addEventListener("keydown", event => {
     if (event.key === "Enter" && event.target.hasAttribute("contenteditable")) {
         event.preventDefault();
-        
-        // Simple modern way
-        document.execCommand("insertHTML", false, "<br>");
+        let selection = window.getSelection();
+        let range = selection.getRangeAt(0);
+        if (selection.rangeCount>0) {
+            let lineBreak = document.createElement("br")
+            console.log(selection.rangeCount);
+            console.log(range.startOffset);
+            range.insertNode(lineBreak);
+            range.setStartAfter(lineBreak);
+            range.setEndAfter(lineBreak)
+            console.log(selection.rangeCount);
+            console.log(range.startOffset);
+        }
     }
 });
+
+
+
+
+
+
+//execCommand is depreciated
+// so some alternatives to its features are:
+// clipboard operations use clipboard api(navigator.clipboard)
+// format by using direct dom manupulation
+// window.getSelection() and range api for control over selections within a document
+// contenteditable attribute to make tect editors
+// window.print() to trigger print dialog
 
