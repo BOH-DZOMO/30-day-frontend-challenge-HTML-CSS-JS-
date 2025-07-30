@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins",sans-serif;
+}
+
+
+main{
+    min-height: 100dvh;
+    background: rgb(10, 3, 29);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    color: white;
+}
+
+#left, #right{
+    border: 2px dotted;
+    padding: 2em;
+    width: 250px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+.list{
+    background: #f41b75;
+    padding: 1rem 1.1rem;
+    display: flex;
+    gap: 0.8rem;
+    font-weight: 600;
+    cursor: grab;
+
+}
+
+.list img{
+    width: 10px;
+}
