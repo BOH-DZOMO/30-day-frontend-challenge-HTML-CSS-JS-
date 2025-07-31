@@ -18,13 +18,14 @@ main{
 
 #left, #right{
     border: 2px dotted;
-    padding: 2em;
+    padding: 2rem;
     width: 250px;
-    height: 320px;
+    height: 340.5px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     gap: 1.5em;
+
 }
 
 .list{
